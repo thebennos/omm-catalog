@@ -1,0 +1,5 @@
+name: "Apache Spark"
+description: |
+  Apache Spark is a fast and general engine for large-scale data processing.
+version: 2.0.2
+category: "Big Data"

@@ -1,0 +1,20 @@
+.catalog:
+  name: "Apache Spark"
+  version: "2.0.2"
+  description: "Apache Spark is a fast and general engine for large-scale data processing."
+  questions:
+    - variable: "spark_slaves"
+      label: "Default Spark Slaves"
+      description: "Number of Spark slaves"
+      required: true
+      type: "int"
+      default: "1"
+    - variable: "hdfs_link"
+      description: |
+        Choose the HDFS service to use.
+      label: "HDFS stack/service"
+      required: true
+      type: "service"
+
+spark-slave:
+  scale: ${spark_slaves}

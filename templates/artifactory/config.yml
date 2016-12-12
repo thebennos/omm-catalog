@@ -1,0 +1,5 @@
+name: "Artifactory"
+description: |
+  Artifactory is a Universal Repository Manager supporting all major packaging formats, build tools and CI servers.
+version: 4.14.3
+category: "Binary Repository"

@@ -1,0 +1,5 @@
+name: "Redis"
+description: |
+  Redis is an open-source, networked, in-memory, key-value data store with optional durability. It is written in ANSI C.
+version: 3.2.4
+category: "Database"

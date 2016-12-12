@@ -1,0 +1,4 @@
+.catalog:
+  name: "Artifactory"
+  version: "4.14.3"
+  description: "Artifactory is a Universal Repository Manager supporting all major packaging formats, build tools and CI servers."
