@@ -1,0 +1,5 @@
+name: Drupal 7
+description: |
+  Community Plumbing
+version: 7.x-FPM
+category: CMS

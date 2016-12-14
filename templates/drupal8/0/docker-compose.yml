@@ -1,0 +1,16 @@
+drupal8:
+  image: drupal:8
+  links:
+    - db:mariadb
+  ports:
+    - ${public_port}:80
+
+db:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: '' 
+    MYSQL_DATABASE: '${drupal_database}'
+    MYSQL_USER: '${drupal_user}'
+    MYSQL_PASSWORD: '${drupal_password}'
+    MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+

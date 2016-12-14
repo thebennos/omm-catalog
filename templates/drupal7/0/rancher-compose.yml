@@ -1,0 +1,16 @@
+.catalog:
+  name: "Drupal 7"
+  version: "Drupal 7.x - FPM"
+  description: "Community Plumbing"
+  uuid: Drupal7-0
+  minimum_rancher_version: v0.51.0
+  questions:    
+    - variable: public_port
+      description: "public port to access the Drupal 7 site"
+      label: "Public Port"
+      required: true
+      default: "8084"
+      type: "int"
+
+
+drupal7-fpm:

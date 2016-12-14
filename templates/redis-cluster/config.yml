@@ -1,0 +1,5 @@
+name: "REDIS Cluster 3.1"
+description: |
+  REDIS Cluster Version 3.1
+version: 3.1
+category: "Cache"

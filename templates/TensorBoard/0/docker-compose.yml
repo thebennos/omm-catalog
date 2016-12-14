@@ -1,0 +1,18 @@
+tensorboard:
+  ports:
+  - ${PUBLIC_PORT}:6006/tcp
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  entrypoint:
+  - /bin/sh
+  - -c
+  - tensorboard --logdir=${LOG_DIR}
+  image: davidchiu/tensorflow09:gpu-tensorboard
+  privileged: true
+  volumes:
+  - /var/lib/nvidia-docker/volumes/nvidia_driver/361.45.18:/usr/local/nvidia:ro
+  - ${CONVOY_VOL}:${MOUNT_PATH}
+  working_dir: ${MOUNT_PATH}
+  stdin_open: true
+  volume_driver: ${CONVOY_SERVICE}

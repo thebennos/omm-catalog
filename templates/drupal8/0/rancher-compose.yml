@@ -1,0 +1,39 @@
+.catalog:
+  name: "Drupal 8"
+  version: "Drupal 8.x"
+  description: "Community Plumbing"
+  uuid: Drupal8-20161114
+  minimum_rancher_version: v0.51.0
+  questions:    
+    - variable: public_port
+      description: "public port to access the Drupal 8 site"
+      label: "Public Port"
+      required: true
+      default: "80"
+      type: "int"
+#    - variable: mariadb_password
+#      description: "root password for MariaDB"
+#      label: "MariaDB Password"
+#      required: true
+#      default: ""
+#      type: "string"
+    - variable: drupal_database
+      description: "Drupal Database Name"
+      default: "drupal"
+      label: "Drupal database"
+      required: "true"
+      type: "string"
+    - variable: drupal_user 
+      description: "Drupal Username"
+      label: "Drupal database user"
+      required: "true"
+      default: "drupal"
+      type: "string"
+    - variable: drupal_password
+      description: "Drupal Database password"
+      label: "Drupal database password"
+      required: "true"
+      default: "drupal"
+      type: "string"
+
+drupal8:
